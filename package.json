@@ -1,0 +1,12 @@
+{
+  "name": "liquidlayout",
+  "version": "1.0.0",
+  "description": "An abstract layout system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hyperandroid",
+  "license": "MIT",
+  "typings": "build/liquidlayout.d.ts"
+}
