@@ -18,7 +18,7 @@
       "type": "git",
       "url": "git://github.com/hyperandroid/liquidlayout.git"
   },
-  "homepage": "http://github.com/hyperandroid/automata"
+  "homepage": "http://github.com/hyperandroid/automata",
   "dependencies": {},
   "devDependencies": {},
   "optionalDependencies": {},
