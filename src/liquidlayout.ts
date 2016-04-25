@@ -2,7 +2,7 @@
  * License: see license.txt file.
  */
 
-type UnitValue= number|string;
+export type UnitValue= number|string;
 export type LayoutResult = { [key:string] : Rect };
 
 interface Point {
@@ -204,7 +204,7 @@ class Rectangle {
  * Initializer object for a common layout.
  *
  */
-interface BaseLayoutInitializer {
+export interface BaseLayoutInitializer {
 
     /**
      * type of the layout, currently: 'element', 'border', 'grid'
@@ -268,7 +268,7 @@ interface BaseLayoutInitializer {
  * Initializer object for a grid layout
  *
  */
-interface GridLayoutInitializer extends BaseLayoutInitializer {
+export interface GridLayoutInitializer extends BaseLayoutInitializer {
 
     /**
      * Set the grid to grow in columns every number of rows.
@@ -292,7 +292,7 @@ interface GridLayoutInitializer extends BaseLayoutInitializer {
  *
  * Initializer for a border layout
  */
-interface BorderLayoutInitializer extends BaseLayoutInitializer {
+export interface BorderLayoutInitializer extends BaseLayoutInitializer {
 
     /**
      * Left element initializer.
@@ -340,7 +340,7 @@ export type LayoutInitializer = BaseLayoutInitializer | GridLayoutInitializer | 
  * Currently, it could be a number, or a percentage value.
  * If the value is a percentage, a call to <code>getValue</code> needs a reference value.
  */
-class Unit {
+export class Unit {
 
     /**
      * Unit value.
@@ -413,7 +413,7 @@ class Unit {
  * These values are Unit objects, so can be described as percentage values. The relative values are relative to
  * the Layout element assigned dimension, so its calculation is deferred to the proper layout stage.
  */
-class Insets {
+export class Insets {
 
     /**
      * Layout element left inset Unit.
@@ -451,7 +451,7 @@ class Insets {
  * This object describes the separation values between two adjacent layout elements.
  * For example, for a grid, describes the Units to separate the grid elements.
  */
-class Gap {
+export class Gap {
 
     /**
      * Horizontal gap Unit.
@@ -492,7 +492,7 @@ class Gap {
  * <p>
  * The BaseLayout object assumes no children when laying out. Other extending objects will modify this behavior.
  */
-export class BaseLayout {
+class BaseLayout {
 
     /**
      * Resulting bounds after applying the layout rules.
@@ -1381,7 +1381,7 @@ class GridLayout extends BaseLayout {
  * @classdesc
  *
  * A LayerLayout stacks elements one on top of the other making their bounds the same.
- * The layout does not work on z-index, simply makes them to take over the same area.
+ * The layout does not work on z-index, simply makes elements to take over the same area.
  *
  */
 class LayerLayout extends BaseLayout {

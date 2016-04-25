@@ -224,6 +224,7 @@ var Unit = (function () {
     };
     return Unit;
 }());
+exports.Unit = Unit;
 /**
  * @class Insets
  * @classdesc
@@ -262,6 +263,7 @@ var Insets = (function () {
     }
     return Insets;
 }());
+exports.Insets = Insets;
 /**
  * @class Gap
  * @classdesc
@@ -286,6 +288,7 @@ var Gap = (function () {
     }
     return Gap;
 }());
+exports.Gap = Gap;
 /**
  * @class Layout
  * @classdesc
@@ -628,7 +631,6 @@ var BaseLayout = (function () {
     };
     return BaseLayout;
 }());
-exports.BaseLayout = BaseLayout;
 /**
  * @class BorderLayout
  * @extends BaseLayout
@@ -1081,7 +1083,7 @@ var GridLayout = (function (_super) {
  * @classdesc
  *
  * A LayerLayout stacks elements one on top of the other making their bounds the same.
- * The layout does not work on z-index, simply makes them to take over the same area.
+ * The layout does not work on z-index, simply makes elements to take over the same area.
  *
  */
 var LayerLayout = (function (_super) {
