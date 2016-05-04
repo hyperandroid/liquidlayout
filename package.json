@@ -1,11 +1,8 @@
 {
   "name": "liquidlayout",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An abstract layout system.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "./build/liquidlayout.js",
   "keywords": [
     "Layout",
     "Canvas",
@@ -13,12 +10,12 @@
   ],
   "author": "hyperandroid",
   "license": "MIT",
-  "typings": "build/liquidlayout.d.ts",
+  "typings": "./build/liquidlayout.d.ts",
   "repository": {
       "type": "git",
       "url": "git://github.com/hyperandroid/liquidlayout.git"
   },
-  "homepage": "http://github.com/hyperandroid/automata",
+  "homepage": "http://github.com/hyperandroid/liquidlayout",
   "dependencies": {},
   "devDependencies": {},
   "optionalDependencies": {},
